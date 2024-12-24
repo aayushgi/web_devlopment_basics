@@ -3,14 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youtube </title>
     <link rel="stylesheet" href="style.css">
+    <title>form Validation</title>
 </head>
 <body>
-    <div class="hastag-header">
-        <h2>#CSS</h2>
-        <span>280k videos.28k channels</span>
 
-    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+<body>
+  <form id="myForm">
+    <label for="username">Username (min 5 characters):</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="password">Password (min 6 characters):</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <p id="errorMessage" style="color: red;"></p>
+  </form>
+
+</body>
+</html>
+    <script>
+document.getElementById('myForm').addEventListener('submit', function (e) {
+  e.preventDefault(); 
+
+  const username = document.getElementById('username').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
+  const errorMessage = document.getElementById('errorMessage');
+
+  let isValid = true;
+  errorMessage.textContent = ''; 
+
+  // Validate username
+  if (username.length < 3) {
+    errorMessage.textContent += 'Username must be at least 3 characters long.\n';
+    isValid = false;
+  }
+
+  // Validate email (basic pattern)
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    errorMessage.textContent += 'Invalid email address.\n';
+    isValid = false;
+  }
+
+  // Validate password
+  if (password.length < 6) {
+    errorMessage.textContent += 'Password must be at least 6 characters long.\n';
+    isValid = false;
+  }
+
+  if (isValid) {
+    alert('Form submitted successfully!');
+  }
+});
+
+
+    </script>
 </body>
 </html>
