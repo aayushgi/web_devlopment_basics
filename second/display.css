@@ -1,0 +1,15 @@
+/* h2{
+    display: inline;
+    background-color: rgb(21, 128, 221);
+}
+span{
+    display: block;
+    background-color: aqua;
+} */
+ span{
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 50px;
+    
+
+ }
