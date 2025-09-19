@@ -1,7 +1,7 @@
 body{
     font-family: 'montserrat', sans-serif;
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     overflow: hidden;
 }
@@ -20,12 +20,13 @@ body{
 
 }
 .mainbar{
-    background-color: red;
+    /* background-color: red; */
     flex: 1;
     /* one indicates that give me all emaning space */
     border-radius: 1rem;
     overflow: auto;
-    background-color: #121212;
+    background-color: black;
+    padding: 0 1.5rem 0 1.5rem;
 }
 .music-player{
     background-color: pink;
@@ -33,7 +34,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 75px;
-    background-color: black;
+    /* background-color: black; */
 }
 a{
     text-decoration: none;
@@ -123,4 +124,63 @@ padding: 0.5rem 0.75rem;
     margin-top: 0.5rem;
     height: 2rem ;
     width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+.sticky-nav-icons{
+/* 
+height: 2rem;
+width: 2rem; */
+margin-top: 0.75rem;
+
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.nav-item{
+margin-right: 1rem;
+}
+.install{
+    background-color: black;
+    color: white;
+
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #121212;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem ;
+    margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100% ;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
