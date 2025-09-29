@@ -1,3 +1,5 @@
+javascript is a case senstive language
+
 primitive type=number 
               boolean (for true and false values)
               string
@@ -10,3 +12,29 @@ modulo(used for reminder operation)
 
 exponentiation (power operator)
 2**3=8
+
+
+NAN property(not a number property)=0/0
+
+operator precedenc
+note-(BODMAS)
+
+unary operator
+if we want to update  any number by 1 we can use the term  age++   //increment
+
+
+IDENTIFIER RULES
+we can not use space between the number decleration 
+variabl must contain  begin with letter
+also begin with $ and _
+
+CAMELcase
+best way to write is= fristName 
+
+BOOLEAN IN javascript
+
+.we can change the variable type in javascript 
+for example let a=5
+a= true 
+then we can change the type of the variable
+(this will not allowed in c++ and java language )
