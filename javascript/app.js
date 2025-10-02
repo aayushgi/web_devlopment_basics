@@ -37,5 +37,29 @@ console.log("++a");
     console.log("after my if statment:");
 
 
-     
+    //nested if-else
+        let marks=96;
+    if(marks => 33){
+        console.log("pass")
+         if(marks>=80){
+            console.log("Grade A+")
+         }
+         else{
+            console.log("lower grade")
+         }
+    }
+    else{
+        console.log("better luck next time")
+    }
+
+    // logical operator
+    // && and
+    // || or
+    // ! not
+
+let marks1 = 97;
+if (marks1 >=33 && marks1 >=80){
+    console.log("passed")
+    console.log("Grade A+")
+}     
     
