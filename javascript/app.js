@@ -62,4 +62,19 @@ if (marks1 >=33 && marks1 >=80){
     console.log("passed")
     console.log("Grade A+")
 }     
-    
+
+
+//alerts and prompts
+// alert(display an alert message on the page)//it is used to show the message on the screen
+// prompt(it is used to take the input from the user)
+alert("hello this is an alert message")
+console.error("this is an error message")
+console.warn("this is a warning message")
+
+
+let fristName = prompt("plz enter your age")
+console.log(fristName)
+
+let fristname = prompt("plz enter your frist name")
+let lastname = prompt("plz enter your last name")
+console.log(fristname + " " + lastname)
